@@ -1,7 +1,9 @@
 #*#
+*.aux
 *.backup
 *.core
 *.dSYM
+*.dvi
 *.log
 *.o
 *~
