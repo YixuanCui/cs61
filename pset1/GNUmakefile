@@ -6,6 +6,7 @@ TESTS = $(patsubst %.c,%,$(sort $(wildcard test[0-9][0-9][0-9].c)))
 all: $(TESTS) hhtest
 
 -include build/rules.mk
+LIBS = -lm
 
 %.o: %.c $(BUILDSTAMP)
 	$(call run,$(CC) $(CPPFLAGS) $(CFLAGS) -O$(O) $(DEPCFLAGS) -o $@ -c,COMPILE,$<)
