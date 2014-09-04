@@ -21,7 +21,7 @@ void* m61_realloc(void* ptr, size_t sz, const char* file, int line) {
     void* new_ptr = NULL;
     if (sz)
         new_ptr = m61_malloc(sz, file, line);
-    if (sz && ptr) {
+    if (ptr && new_ptr) {
         // Copy the data from `ptr` into `new_ptr`.
         // To do that, we must figure out the size of allocation `ptr`.
         // Your code here (to fix test012).
