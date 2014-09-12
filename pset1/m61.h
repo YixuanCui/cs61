@@ -18,6 +18,10 @@ struct m61_statistics {
     char* heap_max;                     // largest allocated addr
 };
 
+typedef struct m61_metadata {
+    unsigned long long size;           // size
+}m61_metadata;
+
 void m61_getstatistics(struct m61_statistics* stats);
 void m61_printstatistics(void);
 void m61_printleakreport(void);

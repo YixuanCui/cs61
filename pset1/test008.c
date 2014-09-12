@@ -10,4 +10,5 @@ int main() {
     m61_getstatistics(&stat);
     assert(p >= stat.heap_min);
     assert(p + 10 <= stat.heap_max);
+    //printf("%p p, %p p+10, %p max \n\n", p, p+10, stat.heap_max);
 }
